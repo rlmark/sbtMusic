@@ -6,7 +6,8 @@ object AudioPlayerWrapper {
   import sun.audio.{AudioPlayer, AudioStream}
 
   def play() {
-    val path = "/Users/rebeccamark/Downloads/01 Mi Secreto.wav"
+//    val path = "/Users/rebeccamark/Downloads/01 Mi Secreto.wav"
+    val path = "/Users/rebeccamark/Downloads/Screenshot.wav"
     val streamFromPath: FileInputStream = new FileInputStream(path)
     AudioPlayer.player.start(new AudioStream(streamFromPath))
   }

@@ -1,4 +1,3 @@
-import sbt.Project.Setting
 import sbt.{AutoPlugin, _}
 
 object PlayIt extends AutoPlugin {
@@ -12,7 +11,7 @@ object PlayIt extends AutoPlugin {
 
   import autoImport._
 
-  override def projectSettings: Seq[Setting[_]] = Seq(
+  override def projectSettings = Seq(
     play := playThis.value
   )
 
