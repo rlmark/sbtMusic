@@ -7,3 +7,7 @@ scalaVersion := "2.12.4"
 sbtPlugin := true
 
 organization := "org.rebecca"
+
+libraryDependencies ++= Seq(
+
+)

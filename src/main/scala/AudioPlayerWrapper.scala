@@ -7,7 +7,7 @@ object AudioPlayerWrapper {
 
   def play() {
 //    val path = "/Users/rebeccamark/Downloads/01 Mi Secreto.wav"
-    val path = "/Users/rebeccamark/Downloads/Screenshot.wav"
+    val path = "/home/rmark/Downloads/LoadScript.wav"
     val streamFromPath: FileInputStream = new FileInputStream(path)
     AudioPlayer.player.start(new AudioStream(streamFromPath))
   }
@@ -17,6 +17,8 @@ object AudioPlayerWrapper {
     val stream = getClass.getResourceAsStream("/01 Mi Secreto.wav")
     AudioPlayer.player.start(new AudioStream(stream))
   }
+
+  // todo: mp3 player
 
   def main(args: Array[String]): Unit = {
     play()

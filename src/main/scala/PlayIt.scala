@@ -11,7 +11,7 @@ object PlayIt extends AutoPlugin {
 
   import autoImport._
 
-  override def projectSettings = Seq(
+  override def projectSettings: Seq[Def.Setting[_]]= Seq(
     play := playThis.value
   )
 
